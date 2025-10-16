@@ -36,7 +36,7 @@ echo
 
 sleep 2.5
 
-echo "Start game? (Y/N)?"
+echo "Start game? (Y/n)"
 stty echo
 
 read -r -n1 answer
@@ -58,13 +58,17 @@ else
   sleep 2.5
 
 fi
-
+<C-LeftRelease>
 i=0
 
 while [[ $i -le 100 ]]; do
 
   echo -ne "\rConnecting: $i%"
+<<<<<<< HEAD
   sleep 0.05
+=======
+  sleep 0.03
+>>>>>>> badba2b (Updated some lines to make more smooth)
   ((i++))
 done
 
