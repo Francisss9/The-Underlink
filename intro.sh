@@ -64,7 +64,6 @@ i=0
 while [[ $i -le 100 ]]; do
 
   echo -ne "\rConnecting: $i%"
-  sleep 0.05
   sleep 0.03
   ((i++))
 done
