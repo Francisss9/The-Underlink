@@ -58,7 +58,7 @@ else
   sleep 2.5
 
 fi
-<C-LeftRelease>
+
 i=0
 
 while [[ $i -le 100 ]]; do
