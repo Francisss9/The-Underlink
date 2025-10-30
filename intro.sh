@@ -64,11 +64,8 @@ i=0
 while [[ $i -le 100 ]]; do
 
   echo -ne "\rConnecting: $i%"
-<<<<<<< HEAD
   sleep 0.05
-=======
   sleep 0.03
->>>>>>> badba2b (Updated some lines to make more smooth)
   ((i++))
 done
 
