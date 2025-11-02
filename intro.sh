@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source functions/text.sh
+
 trap 'echo -e "\n[Underlink terminated]"; stty echo; exit 0' SIGINT
 
 stty -echo
@@ -16,27 +18,27 @@ echo
 
 sleep 2.5
 
-echo "You weren't cautious and now you are stuck."
+type_text "You weren't cautious and now you are stuck."
 echo
 
-sleep 2.5
+sleep 0.5
 
-echo "You are now linked. There is no exit!"
+type_text "You are now linked. There is no exit!"
 echo
 
-sleep 2.5
+sleep 0.5
 
-echo "Watch out for the dangers while crossing the Link."
+type_text "Watch out for the dangers while crossing the Link."
 echo
 
-sleep 2.5
+sleep 0.5
 
-echo "Good Luck!"
+type_text "Good Luck!"
 echo
 
-sleep 2.5
+sleep 0.5
 
-echo "Start game? (Y/n)"
+type_text "Start game? (Y/n)"
 stty echo
 
 read -r -n1 answer
@@ -46,16 +48,16 @@ echo
 if [[ $answer == "y" || $answer == "Y" ]]; then
 
   echo
-  echo "Making connection to link..."
+  type_text "Making connection to link..."
   echo
-  sleep 2.5
+  sleep 0.5
 
 else
 
   echo
-  echo "I said you can't escape! Making connection to link..."
+  type_text "I said you can't escape! Making connection to link..."
   echo
-  sleep 2.5
+  sleep 0.5
 
 fi
 
@@ -65,11 +67,12 @@ while [[ $i -le 100 ]]; do
 
   echo -ne "\rConnecting: $i%"
   sleep 0.03
-  ((i++))
+    ((i++))
 done
+echo
 
 echo
-echo -e "\nLinked successfully!!"
+type_text "Linked successfully!!"
 sleep 1
 echo
 
