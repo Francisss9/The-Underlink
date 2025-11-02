@@ -72,4 +72,6 @@ echo
 echo -e "\nLinked successfully!!"
 sleep 1
 echo
+
+read -t 0.01 -n 10000 discard
 stty echo
