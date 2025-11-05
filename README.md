@@ -6,7 +6,7 @@
 
 <div align="center">
   
-  ### T H E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; U N D E R - L I N K
+  ### T H E&nbsp;&nbsp;&nbsp;&nbsp; U N D E R - L I N K
 
 </div>
 
