@@ -10,7 +10,7 @@ echo
 echo
 echo "====================================="
 echo
-echo "      Welcome to the Underlink"
+echo "      Welcome to The Under-link"
 echo
 echo "====================================="
 echo
