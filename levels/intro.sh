@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source functions/text.sh
+source /home/francisgomesx/Documentos/Code/The-Underlink/functions/text.sh
 
 trap 'echo -e "\n[Underlink terminated]"; stty echo; exit 0' SIGINT
 
