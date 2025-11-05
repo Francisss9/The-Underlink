@@ -45,11 +45,10 @@
 - [ ] Sound triggers
 - [ ] Player data persistence
 
-<br>
-
+<br><br><br>
 
 <div align="center">
 
-  *Cyber-occult hacking adventure in a forbidden digital network*
+  *The Underlink knows those who pry too deep*
 
 </div>
