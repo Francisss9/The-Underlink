@@ -1,3 +1,5 @@
+#!/bin/bash
+
 type_text() {
  local text="$1"
  for ((i=0; i<${#text}; i++)); do
@@ -5,4 +7,8 @@ type_text() {
   sleep 0.05
  done
  echo
+}
+
+random_sleep() {
+    sleep $(awk -v min=0.25 -v max=0.5 'BEGIN{srand(); print min+rand()*(max-min)}')
 }
