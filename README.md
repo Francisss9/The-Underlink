@@ -26,7 +26,6 @@
 
   ### Root Sequence
 - [x] Intro sequence (text + delay)
-- [x] effect with random delays
 - [ ] ASCII logo animation
 - [ ] Progress bar loading
 
