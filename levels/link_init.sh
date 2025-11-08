@@ -19,27 +19,27 @@ link_init() {
   echo
   echo
 
-  sleep 2.5
+  sleep 1
 
   type_text "You weren't cautious and now you are stuck."
   echo
-
-  random_sleep
+  sleep 2.5
+ 
 
   type_text "You are now linked. There is no exit!"
   echo
-
   random_sleep
+ 
 
   type_text "Watch out for the dangers while crossing the Link."
   echo
-
   random_sleep
+ 
 
   type_text "Good Luck!"
   echo
-
   random_sleep
+
 
   type_text "Start game? (Y/n)"
   stty echo
@@ -77,6 +77,7 @@ link_init() {
   echo
   type_text "Linked successfully!!"
   random_sleep
+
   echo
 
   read -t 0.01 -n 10000 discard
