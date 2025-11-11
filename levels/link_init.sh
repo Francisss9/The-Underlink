@@ -10,11 +10,14 @@ link_init() {
   stty -echo
 
   echo
-  echo
   echo "====================================="
+  echo "====================================="
+  
   echo
   echo "      Welcome to The Under-link"
   echo
+
+  echo "====================================="
   echo "====================================="
   echo
   echo
