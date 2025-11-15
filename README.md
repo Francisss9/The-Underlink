@@ -47,6 +47,7 @@
 - [ ] Fake hacking logs
 - [ ] Sound triggers
 - [ ] Player data persistence
+- [ ] Change commands normal output
 
 <br><br><br>
 

@@ -1,3 +1,0 @@
-New ideas:
-
-- When using commands to show where the user is at the moment, make something diff...
