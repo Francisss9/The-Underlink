@@ -51,7 +51,7 @@ link_init() {
   stty -echo
   echo
 
-  if [[ $answer == "y" || $answer == "Y" ]]; then
+  if [[ $answer == "y" || $answer == "Y" || $answer == "" ]]; then
 
     echo
     type_text "Making connection to link..."
