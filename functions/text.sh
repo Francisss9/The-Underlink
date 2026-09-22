@@ -12,3 +12,25 @@ type_text() {
  done
  echo
 }
+
+# Renders a filling progress bar, e.g. [########----------] 40%
+# Args: $1 = label to show before the bar (optional)
+progress_bar() {
+  local label="${1:-Connecting}"
+  local width=30
+  local i=0
+
+  while [[ $i -le 100 ]]; do
+    local filled=$(( i * width / 100 ))
+    local empty=$(( width - filled ))
+    local bar=""
+    local gap=""
+    (( filled > 0 )) && bar=$(printf '%0.s#' $(seq 1 $filled))
+    (( empty > 0 )) && gap=$(printf '%0.s-' $(seq 1 $empty))
+
+    echo -ne "\r$label: [${bar}${gap}] ${i}%"
+    sleep 0.025
+    ((i++))
+  done
+  echo
+}

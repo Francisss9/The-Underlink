@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source ./functions/text.sh
+source ./functions/ascii.sh
 
 link_init() {
 
@@ -9,16 +10,9 @@ link_init() {
 
   stty -echo
 
-  echo
-  echo "====================================="
-  echo "====================================="
-  
-  echo
-  echo "      Welcome to The Under-link"
-  echo
+  print_ascii_logo
 
-  echo "====================================="
-  echo "====================================="
+  center_line "Welcome to The Under-link"
   echo
   echo
 
@@ -67,15 +61,7 @@ link_init() {
 
   fi
 
-  i=0
-
-  while [[ $i -le 100 ]]; do
-
-    echo -ne "\rConnecting: $i%"
-    sleep 0.03
-      ((i++))
-  done
-  echo
+  progress_bar "Connecting"
 
   echo
   type_text "Linked successfully!!"

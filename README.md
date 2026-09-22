@@ -30,8 +30,8 @@
 
   ### Root Sequence
 - [x] Intro sequence (text + delay)
-- [ ] ASCII logo animation
-- [ ] Progress bar loading
+- [x] ASCII logo animation
+- [x] Progress bar loading
 
 ### Descent Nodes
 - [ ] Level 1: The Subnet Abyss

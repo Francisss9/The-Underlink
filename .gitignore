@@ -1,0 +1,32 @@
+# --- Local dev / testing (not part of the shipped game) ---
+/tests/
+/dev/
+/.scratch/
+*.local.sh
+*.wip.sh
+*.draft.md
+
+# --- Player data / save files (should never be committed) ---
+/saves/
+*.save
+*.progress
+.underlink_save
+
+# --- Logs ---
+*.log
+/logs/
+
+# --- OS cruft ---
+.DS_Store
+Thumbs.db
+
+# --- Editor / IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# --- Shell / env ---
+.env
+*.bak
